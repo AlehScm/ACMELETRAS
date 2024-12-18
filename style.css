@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 5%;
+    z-index: 1000;
+    background-color: gray;
+    
+}
+
+h1{
+    font-size: 24;
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+}
+
+#first{
+    background-image: url('imagens/first.jpg');
+    background-size: auto 120%;
+    background-position: 70% center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 5%;
+
+}
+
+#div__first{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 5%;
+    text-align: center;
+    background-color: rgba(56, 55, 55, 0.5);
+    backdrop-filter: blur(1px);
+    height: 85%;
+    border-radius: 20px;
+    align-items: center;
+
+}
+
+#gif{
+    width: 25%;
+    height: auto;
+}
+
+#buttao__first{
+    width: 100%;
+    height: 40%;
+    font-size: large;
+    background-color: greenyellow;
+    color: blue;
+}
+
+#second{
+    padding: 10%;
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+
+}
+
+ul {
+    margin-top: 5%;
+    list-style-type: none; /* Remove o marcador padrão */
+  }
+  
+li {
+    border-left: 1px solid rgb(51, 212, 252); /* Risco à esquerda de cada item */
+    padding-left: 10%; /* Distância entre o risco e o texto */
+    margin-bottom: 10%; /* Espaçamento entre os itens */
+}
+
+footer{
+    padding: 10%;
+    border: 2px solid red;
+
+}
+
+main{
+    height: 1000px;
+}
+
