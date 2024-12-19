@@ -1,3 +1,7 @@
+:root{
+    --cor-titulo: #b63131;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,7 +35,7 @@ h1{
 p{
     font-size: 16px;
 }
-
+/* sessão 1 */
 #first{
     background-image: url('imagens/first.jpg');
     background-size: auto 120%;
@@ -56,7 +60,11 @@ p{
 
 }
 
-#gif{
+.li_palavras{
+    margin-top: 20%;
+}
+
+.gif{
     width: 25%;
     height: auto;
 }
@@ -68,27 +76,45 @@ p{
     background-color: greenyellow;
     color: blue;
 }
-
+/* sessão 2 */
 #second{
-    padding: 10%;
+    padding: 5%;
     border: 2px solid purple;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10%;
 
 }
 
-ul {
-    margin-top: 5%;
+.h3{
+    color: rgb(58, 120, 255);
+}
+
+#lista{
     list-style-type: none; /* Remove o marcador padrão */
   }
   
-li {
+.elemento__lista__servicos{
     border-left: 1px solid rgb(51, 212, 252); /* Risco à esquerda de cada item */
     padding-left: 10%; /* Distância entre o risco e o texto */
-    margin-bottom: 10%; /* Espaçamento entre os itens */
+    margin-top: 5%;
+}
+/* sessão 3 */
+#terceiro{
+    padding: 5%;
+    text-align: center;
+}
+
+#segunda__lista{
+    padding: 5%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.segundo__elemento__lista{
+    margin-top: 5%;
+    font-weight: 700;
 }
 
 footer{
@@ -97,7 +123,5 @@ footer{
 
 }
 
-main{
-    height: 1000px;
-}
+
 
