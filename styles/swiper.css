@@ -1,0 +1,24 @@
+.swiper_section{
+    padding: 5%;
+    text-align: center;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none !important;
+}
+
+.swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 24px !important;
+    background: #ddd !important; /* Cor de fundo dos slides */
+    height: 300px !important; /* Altura do slide */
+    width: 50px !important;
+  }
+
+.swiper-slide.swiper-slide-active {
+    opacity: 1; /* Slide central em destaque */
+    background: #007bff !important;
+}

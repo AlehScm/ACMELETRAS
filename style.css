@@ -1,3 +1,5 @@
+@import url("styles/swiper.css");
+
 :root{
     --cor-titulo: #b63131;
 }
@@ -116,6 +118,7 @@ p{
     margin-top: 5%;
     font-weight: 700;
 }
+
 
 footer{
     padding: 10%;

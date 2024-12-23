@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACMELETRAS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
             <div id= div__first>
                 <h1>DÊ VIDA AO SEU PROJETO!</h1>
                 <div style="background-color: rgb(219, 50, 50);">
-                    <h3>Afinal quem não é visto não é lembrado!</h3>
+                <h3>Afinal quem não é visto não é lembrado!</h3>
                 </div>
                 <div>
                     <p>Com mais de 15 anos de experiencia no mercado de comunicação visual.</p>
@@ -25,7 +26,7 @@
                 </div>
                 <ul>
                     <li class="li_palavras">EXCELÊNCIA</li>
-                    <li class="li_palavras">QUALIDADE</li>
+                    <li class="li_palavras">QUALIDADE</li> 
                     <li class="li_palavras">ATENDIMENTO</li>
                 </ul>
                 
@@ -61,9 +62,58 @@
                 <button id="buttao__first">Quero uma cotação</button>
             </div>
         </section>
+        <section class="swiper_section">
+            <h2 style="color: black;">ALGUNS DE NOSSOS TRABAHOS</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="slide 1" alt=""></div>
+                <div class="swiper-slide"><img src="slide 2" alt=""></div>
+                <div class="swiper-slide"><img src="slide3" alt=""></div>
+                ...
+                </div>
+                <!-- If we need pagination -->
+                
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
     </main>
     <footer style="color:aqua">
         <p>© 2024 ACM LETRAS Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400, // Velocidade da transição entre os slides
+            spaceBetween: 100, // Espaçamento entre os slides
+            autoplay: {
+                delay: 5000, // Tempo entre cada slide no autoplay
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets', // Configura o tipo de paginação para bullets
+                clickable: true, // Faz os bullets clicáveis
+            },
+            effect: 'freemoode', // Define o efeito como Coverflow
+            grabCursor: true,    // Mostra o cursor de "mão" ao arrastar
+            centeredSlides: true, // Centraliza o slide ativo
+            slidesPerView: 3, // Ajusta o número de slides visíveis automaticamente
+            coverflowEffect: {
+            rotate: 30, // Ângulo de rotação dos slides
+            stretch: 0, // Distância entre os slides no eixo Z
+            depth: 150, // Profundidade 3D
+            modifier: 1, // Intensidade do efeito
+            slideShadows: true, // Ativa/desativa sombras nos slides
+            },
+        });
+    </script>
 </body>
 </html>
